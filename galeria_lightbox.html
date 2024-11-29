@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inserció Bàsica</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="bg-blue-500 text-white text-center p-5 flex justify-center gap-8 align-middle">
+        <h1 class="text-4xl"><a href="/" class="no-underline">WEB Images</a></h1>
+        <a href="lighthouse.html">
+            <img src="images/lighthouse-logo.svg" alt="LightHouseLogo" class="max-h-12">
+        </a>
+    </header>
+
+    <h1 class="text-3xl font-bold uppercase text-center my-8">Pràctica 5</h1>
+    <div class="md:flex gap-12 w-10/12 mx-auto mt-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div
+                class="relative flex-1 my-12 md:my-0 bg-gray-300 rounded-lg p-10 shadow-xl hover:bg-gray-400 transition ease-in-out">
+                <a href="./images/city.avif" data-lightbox="gallery">
+                    <img src="./images/city.avif" alt="Image 1" class="w-full h-auto">
+                </a>
+            </div>
+            <div
+                class="relative flex-1 my-12 md:my-0 bg-gray-300 rounded-lg p-10 shadow-xl hover:bg-gray-400 transition ease-in-out">
+                <a href="./images/mountain.avif" data-lightbox="gallery">
+                    <img src="./images/mountain.avif" alt="Image 2" class="w-full h-auto">
+                </a>
+            </div>
+            <div
+                class="relative flex-1 my-12 md:my-0 bg-gray-300 rounded-lg p-10 shadow-xl hover:bg-gray-400 transition ease-in-out">
+                <a href="./images/space.avif" data-lightbox="gallery">
+                    <img src="./images/space.avif" alt="Image 3" class="w-full h-auto">
+                </a>
+            </div>
+            <div
+                class="relative flex-1 my-12 md:my-0 bg-gray-300 rounded-lg p-10 shadow-xl hover:bg-gray-400 transition ease-in-out">
+                <a href="./images/city25.jpg" data-lightbox="gallery">
+                    <img src="./images/city25.jpg" alt="Image 4" class="w-full h-auto">
+                </a>
+            </div>
+            <div
+                class="relative flex-1 my-12 md:my-0 bg-gray-300 rounded-lg p-10 shadow-xl hover:bg-gray-400 transition ease-in-out">
+                <a href="./images/lighthouse-logo.svg" data-lightbox="gallery">
+                    <img src="./images/lighthouse-logo.svg" alt="Image 5" class="w-full h-auto">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+    <link href="node_modules/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
+</body>
+
+</html>

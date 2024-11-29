@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inserció Bàsica</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+
+    <header class="bg-blue-500 text-white text-center p-5 flex justify-center gap-8 align-middle">
+        <h1 class="text-4xl"><a href="/" class="no-underline">WEB Images</a></h1>
+        <a href="lighthouse.html">
+            <img src="images/lighthouse-logo.svg" alt="LightHouseLogo" class="max-h-12">
+        </a>
+    </header>
+
+    <div class="md:flex gap-12 bg-gray-100 w-10/12 mx-auto mt-12">
+        <div
+            class="flex-1 my-12 md:my-0 bg-gray-300 rounded-lg p-10 shadow-xl hover:bg-gray-400 transition ease-in-out">
+            <h1 class="text-3xl font-bold uppercase text-center mb-8">Pràctica 3</h1>
+            <img srcset="images/city.avif 800w, images/city50.jpg 480w, images/city25.jpg 320w"
+                sizes="(max-width: 320px) 25%, (max-width: 480px) 50%, 800px" src="images/city.avif"
+                alt="Imatges segons mida buscador" />
+            <h2 class="text-xl">Diferencia</h2>
+            <img src="images/srcset.png" alt="amb srcset">
+        </div>
+        <div
+            class="flex-1 my-12 md:my-0 bg-gray-300 rounded-lg p-10 shadow-xl hover:bg-gray-400 transition ease-in-out">
+            <h1 class="text-3xl font-bold uppercase text-center mb-8">Pràctica 4</h1>
+            <picture>
+                <source media='(min-width: 900px)' srcset='images/city.avif'>
+                <source media='(min-width: 550px)' srcset='images/city50.jpg'>
+                <img src='images/city25.jpg'>
+            </picture>
+            <h2 class="text-xl">Avantatge Picture</h2>
+            <p>És més facil d'entendre, de modificar i com ho fas tot en etiquetes per separat i no dintre la mateixa
+                tag es fa més fàcil de mantenir.</p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

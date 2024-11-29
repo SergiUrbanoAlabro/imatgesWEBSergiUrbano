@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inserció Bàsica</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+
+    <header class="bg-blue-500 text-white text-center p-5 flex justify-center gap-8 align-middle">
+        <h1 class="text-4xl"><a href="/" class="no-underline">WEB Images</a></h1>
+        <a href="lighthouse.html">
+            <img src="images/lighthouse-logo.svg" alt="LightHouseLogo" class="max-h-12">
+        </a>
+    </header>
+
+    <div class="md:flex gap-12 bg-gray-100 w-10/12 mx-auto mt-12">
+        <div
+            class="flex-1 my-12 md:my-0 bg-gray-300 rounded-lg p-10 shadow-xl hover:bg-gray-400 transition ease-in-out">
+            <h1 class="text-3xl font-bold uppercase text-center mb-8">Pràctica 1</h1>
+            <img src="images/city.avif" alt="Ciutat amb Inserció bàsica">
+            <!--L'alt és important perquè quan no troba o no carrega la imatge per algun motiu, mostra un nom ràpid perquè l'usuari es fagi una idea de quna imatge hi ha allà-->
+        </div>
+        <div
+            class="flex-1 my-12 md:my-0 bg-gray-300 rounded-lg p-10 shadow-xl hover:bg-gray-400 transition ease-in-out">
+            <h1 class="text-3xl font-bold uppercase text-center mb-8">Pràctica 2</h1>
+            <h2 class="text-xl font-bold uppercase text-start my-4">WebP</h2>
+            <img src="images/city.webp" alt="Ciutat amb mides fixes" width="400" height="300">
+            <h2 class="text-xl font-bold uppercase text-start my-4">AVIF</h2>
+            <img src="images/city.avif" alt="Ciutat amb mides fixes" width="400" height="300">
+            <!--La diferència entre la mida de la imatge real i els tags width i height és que la imatge real sempre augmentarà fins al seu tope de pixels, en canvi, amb les tags li defineixes una mida màxima fent que per molt que mesuri la imatge mai passara d'aquells limits.-->
+        </div>
+    </div>
+
+</body>
+
+</html>

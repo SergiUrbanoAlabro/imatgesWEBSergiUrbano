@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inserció Bàsica</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+
+    <header class="bg-blue-500 text-white text-center p-5 flex justify-center gap-8 align-middle">
+        <h1 class="text-4xl"><a href="/" class="no-underline">WEB Images</a></h1>
+        <a href="lighthouse.html">
+            <img src="images/lighthouse-logo.svg" alt="LightHouseLogo" class="max-h-12">
+        </a>
+    </header>
+
+    <h1 class="text-3xl font-bold uppercase text-center mb-8">Pràctica 6</h1>
+    <img src="images/mapa.avif" usemap="#image-map">
+
+    <map name="image-map">
+        <area target="_blank" alt="Islandia" title="Rússia" href="/russia.html" coords="1584,141,804,295" shape="rect">
+        <area target="_blank" alt="Islandia" title="Islandia" href="/islandia.html" coords="652,211,39" shape="circle">
+        <area target="_blank" alt="Australia" title="Australia" href="/australia.html"
+            coords="1126,552,1220,483,1278,499,1319,555,1331,601,1299,639,1257,627,1216,598,1141,622" shape="poly">
+    </map>
+    <!--En gimp a filtres>web>mapa d'imatge hi ha l'opció de crear arees rectangulars, circulars o poligonals per assignarlis un espai que al fer click et pugui portar a una altra pàgina web amb informació sobre la zona clicada.
+
+    En altra banda amb eines online tenen exactament la mateixa funció i lo unic que canvia és que la funcionalitat és més accessible ja que la pàgina només està dedicada a allò. Jo he fet servir https://www.image-map.net/ -->
+</body>
+
+</html>
